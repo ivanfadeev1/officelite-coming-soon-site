@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <title>Officelite</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sign-up.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="img/logo.svg" alt="Officelite logo" width="155" height="30">
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="sign-up">
+      <div class="container sign-up__container">
+        <div class="sign-up__content">
+          <h1 class="sign-up__content-title">Work smarter.
+            <span class="sign-up__content-title-2"> Save time.</span>
+          </h1>
+          <p class="sign-up__content-descr">Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+          <div class="counter counter--light sign-up__counter">
+            <h2 class="counter__title">Coming
+              <span class="counter__title-date">
+                <span class="counter__title-date-day">4</span>
+                <span class="counter__title-date-month">Nov</span>
+                <span class="counter__title-date-year">2020</span>
+              </span>
+            </h2>
+            <ul class="counter__sections">
+              <li class="counter__sections-item">
+                <span class="counter__sections-item-number counter__sections-item-number--days">30</span>
+                <span class="counter__sections-item-subtitle">days</span>
+              </li>
+              <li class="counter__sections-item">
+                <span class="counter__sections-item-number counter__sections-item-number--hours">00</span>
+                <span class="counter__sections-item-subtitle">hours</span>
+              </li>
+              <li class="counter__sections-item">
+                <span class="counter__sections-item-number counter__sections-item-number--minutes">00</span>
+                <span class="counter__sections-item-subtitle">min</span>
+              </li>
+              <li class="counter__sections-item">
+                <span class="counter__sections-item-number counter__sections-item-number--seconds">00</span>
+                <span class="counter__sections-item-subtitle">sec</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="form sign-up__form" action="#" method="post" novalidate>
+          <div class="form__input-box">
+            <input class="form__input-box-input" type="text" name="name" id="name-field" placeholder="Name">
+            <label class="form__input-box-label" for="name-field">Name</label>
+          </div>
+          <div class="form__input-box form__input-box--to-be-checked">
+            <input class="form__input-box-input" type="email" name="email" id="email-field" placeholder="Email Address" required>
+            <label class="form__input-box-label" for="email-field">Email Address</label>
+            <button class="form__input-box-button" aria-label="Reset field" aria-hidden="true" disabled>
+              <img class="form__input-box-button-img" src="img/sign-up/icon-cross.svg" alt="White cross in a red circle" width="20" height="20">
+            </button>
+          </div>
+
+          <!-- Custom select -->
+          <div class="form__select">
+            <button class="form__select-button"
+                    type="button"
+                    role="combobox"
+                    aria-label="Select tariff"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                    aria-controls="select-dropdown">
+              <span class="form__select-button-value">
+                <span class="form__select-button-value-name">Basic Pack</span>
+                <span class="form__select-button-value-price">Free</span>
+              </span>
+            </button>
+            <ul class="form__select-dropdown" role="listbox" id="select-dropdown">
+              <li class="form__select-dropdown-option" role="option">
+                <input class="form__select-dropdown-option-input" type="radio" id="basic" name="tariff" checked>
+                <label class="form__select-dropdown-option-label" for="basic">
+                  <span class="form__select-dropdown-option-label-name">Basic Pack</span>
+                  <span class="form__select-dropdown-option-label-price">Free</span>
+                </label>
+              </li>
+              <li class="form__select-dropdown-option" role="option">
+                <input class="form__select-dropdown-option-input" type="radio" id="pro" name="tariff">
+                <label class="form__select-dropdown-option-label" for="pro">
+                  <span class="form__select-dropdown-option-label-name">Pro Pack</span>
+                  <span class="form__select-dropdown-option-label-price">$9.99</span>
+                </label>
+              </li>
+              <li class="form__select-dropdown-option" role="option">
+                <input class="form__select-dropdown-option-input" type="radio" id="ultimate" name="tariff">
+                <label class="form__select-dropdown-option-label" for="ultimate">
+                  <span class="form__select-dropdown-option-label-name">Ultimate Pack</span>
+                  <span class="form__select-dropdown-option-label-price">$19.99</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form__input-box form__input-box--to-be-checked form__input-box--to-be-disabled">
+            <input class="form__input-box-input" type="tel" name="phone" id="phone-field" placeholder="Phone Number" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+            <label class="form__input-box-label" for="phone-field">Phone Number</label>
+            <button class="form__input-box-button" aria-label="Reset field" aria-hidden="true" disabled>
+              <img class="form__input-box-button-img" src="img/sign-up/icon-cross.svg" alt="White cross in a red circle" width="20" height="20">
+            </button>
+          </div>
+          <div class="form__input-box form__input-box--to-be-disabled">
+            <input class="form__input-box-input" type="text" name="company" id="company-field" placeholder="Company">
+            <label class="form__input-box-label" for="company-field">Company</label>
+          </div>
+          <button class="button button--primary form__button" type="submit">Get on the list</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/shared.js"></script>
+  <script src="js/sign-up.js"></script>
+</body>
+</html>
