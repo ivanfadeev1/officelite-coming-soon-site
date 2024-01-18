@@ -270,6 +270,7 @@ body {
             }
             &:focus {
                 border-color: $color-blue;
+                outline: none;
             }
         }
         &-dropdown {
