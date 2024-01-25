@@ -27,11 +27,11 @@
 
 #### Main
 
-[1440px](screenshot/screenshot-main-1440.png) • [768px](screenshot/screenshot-main-768.png) • [375px](screenshot/screenshot-main-375.png)
+[1440px](screenshot/main/screenshot-main-1440.png) • [768px](screenshot/main/screenshot-main-768.png) • [375px](screenshot/main/screenshot-main-375.png)
 
 #### Sign-up
 
-[1440px](screenshot/screenshot-sign-up-1440.png) • [768px](screenshot/screenshot-sign-up-768.png) • [375px](screenshot/screenshot-sign-up-375.png)
+[1440px](screenshot/sign-up/screenshot-sign-up-1440.png) • [768px](screenshot/sign-up/screenshot-sign-up-768.png) • [375px](screenshot/sign-up/screenshot-sign-up-375.png)
 
 ### Ссылки
 
